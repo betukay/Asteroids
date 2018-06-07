@@ -34,15 +34,15 @@ function Ship () {
     pop();
   }
 
-  /Ship will wrap around the screen/
+  // Ship will wrap around the screen
   this.edges = function() {
-    /for width/
+    // for width/
     if(this.pos.x > width + this.r) {
       this.pos.x = -this.r;
     } else if(this.pos.x < -this.r) {
       this.pos.x = width + this.r;
     }
-    /for height/
+    // for height
     if(this.pos.y > height + this.r) {
       this.pos.y = -this.r;
     } else if(this.pos.y < -this.r) {
